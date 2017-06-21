@@ -1,0 +1,49 @@
+*, *:before, *:after{
+	box-sizing:border-box;
+	position:relative;
+}
+html,body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	width:100%;
+}
+#inicio{
+	width:100%;
+	display:flex;
+	justify-content:center; 
+}
+header nav {
+	z-index:1;
+	position:fixed;
+	/*width:100%;*/
+	background:pink; 
+	
+}
+header nav ul{
+	list-style:none;
+	display:flex;
+
+
+}
+header nav ul li{
+	font-family:;
+	margin-left:5%;
+	/*padding:5px 15px;*/
+	border:solid 1px #000;
+	border-radius:15px;
+	width:150px;
+	font-size:0.94em;
+	text-align:center;
+	line-height:1.7em;
+	letter-spacing:0em;
+
+}
+#inicio img{
+	width:58.35%;
+	margin-top:93px;
+}
+img{
+	width:150px;
+}
