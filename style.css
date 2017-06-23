@@ -75,10 +75,74 @@ img{
 	font-size:0.88em;
 	color:#95989a;
 	letter-spacing:0;
-
-
-	
-
+}
+#acoes{
+	height:100vh;
+	width:100%;
+	padding:5%;
+	display:flex;
+	flex-flow:row wrap; 
+	justify-content:center;
+	align-items:center;
+	align-content:flex-start;  
+}
+#acoes h2{
+	font-size:1.88em;
+	color:#95989a;
+	padding-left:4%; 
+	font-style:normal;
+	text-align:left; 
+	line-height:1.61em;
+	letter-spacing:0;
+	width:100%;
+}
+#acoes div {
+	width: 30%;
+	margin: 0 5px;
+}
+#acoes img{
+	width:100%;
+	/*margin-left:40%;*/
+}
+#acoes div p{
+	font-size:0.88em;
+	color:#95989a;
+	font-style:normal;
+	text-align:left; 
+	line-height:1.61em;
+	letter-spacing:0;
+	padding-right:63%;  
+	display:flex;
+	justify-content:center;    
+}
+#contato{
+	height:100vh; 
+	background:url("Assets/contato.jpg") no-repeat right top; 
+	background-size:100%;
+	width:100%;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+#contato div{
+	width:27%;
+	background-color:#000;
+	margin-right:5%;
+	padding:30px;
+	margin-top: 20%;
+	border-radius:25px;
+	opacity:0.5;
+}
+#contato div h2{
+	color:#fff;
+}
+#contato div p{
+	color:#fff;
+}
+#contato div img{
+	width:30%; 
+	padding-right:20px; 
 
 }
+  
 
