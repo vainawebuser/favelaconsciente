@@ -115,8 +115,6 @@ html,body{
 		width:85%;
 		margin:0 auto;
 		padding:5%;
-		/*margin-right:15%;*/
-		/*margin-top:0%;*/
 	}
 }
 #sobre div h2{
@@ -199,15 +197,9 @@ html,body{
 }
 #acoes img{
 	width:100%;
-	/*margin-left:40%;*/
-}
-@media (max-width: 640px){
-	/*#acoes img{
-		width:100%;
-	}*/
 }
 
-/*Os paragrafos .p1 e .p3 são as mesma coisa que o div p?*/
+
 #acoes div p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
@@ -222,15 +214,15 @@ html,body{
 	justify-content:center;    
 }
 @media (max-width: 640px){
-	#acoes .p1{
+	#acoes .ParaDesktop{
  		display:none; 
 	}	
 }
-#acoes .p3{
+#acoes .ParaMobile{
 	display:none;
 }
 @media (max-width: 640px){
-	#acoes .p3{
+	#acoes .ParaMobile{
 		font-weight:700; 
 		display:block; 
 		padding: 0;
@@ -253,7 +245,6 @@ html,body{
 		margin-bottom:1%;
 		background-size:300%;
 		margin-top:10px;	
-
 	}	
 }
 #contato div{
@@ -263,8 +254,6 @@ html,body{
 	margin-top:200px;
 	padding:20px;
 	border-radius:20px;
-	/*background-color:#000;*/
-	/*opacity:0.5;*/
 }
 @media (max-width: 640px){
 	#contato div {
@@ -282,9 +271,7 @@ html,body{
 	display:flex;
 	justify-content:center;      
 }
-@media (max-width: 640px){
-	
-}
+
 #contato div p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
@@ -292,9 +279,7 @@ html,body{
 	margin-left:13%;   
 	
 }
-@media (max-width: 640px){
-	
-}
+
 #contato div img{
 	top:19%;
 	width:20%; 
@@ -302,9 +287,7 @@ html,body{
 	margin-bottom:7%; 
 	margin-left:5%;  
 }
-@media (max-width: 640px){
-	
-}
+
 /*@media (max-width:640px){
 	body{
 		margin:0;
