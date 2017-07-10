@@ -117,19 +117,19 @@ html,body{
 		padding:5%;
 	}
 }
-#sobre div h2{
+.sobreh2{
 	color:#95989a;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:600; 
 	margin-top:0;
 }
 @media (max-width: 640px){
-	#sobre div h2{
+	.sobreh2{
 		margin-top:0;
 		line-height:2em; 
 	}
 }
-#sobre  div p{
+.sobrep{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
 	text-align:left;
@@ -140,7 +140,7 @@ html,body{
 	letter-spacing:0;
 }
 @media (max-width: 640px){
-	#sobre  div p{
+	.sobrep{
 		line-height:1em;
 		font-size:1em;
 		margin-top:0;
@@ -165,7 +165,7 @@ html,body{
 		flex-direction:column;     
 	}
 }
-#acoes h2{
+.h2acoes{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:600;
 	font-size:1.88em;
@@ -178,7 +178,7 @@ html,body{
 	width:100%;
 }
 @media (max-width: 640px){
-	#acoes h2{
+	.h2acoes{
 		font-weight:700;
 		margin:0;
 		font-size:2em;
@@ -263,7 +263,7 @@ html,body{
 		margin-top:10%;
 	}
 }
-#contato div h2{
+.h2contato{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:700;
 	color:#fff;
@@ -272,12 +272,17 @@ html,body{
 	justify-content:center;      
 }
 
-#contato div p{
+.email{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
 	color:#fff; 
 	margin-left:13%;   
-	
+}
+.numerotel{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	color:#fff; 
+	margin-left:13%;   
 }
 
 #contato div img{
@@ -287,84 +292,4 @@ html,body{
 	margin-bottom:7%; 
 	margin-left:5%;  
 }
-
-/*@media (max-width:640px){
-	body{
-		margin:0;
-		overflow:hidden;
-	}*/
-	/*#inicio{
-		align-items: flex-start;
-		height: 70vh;
-	}*/
-	/*#inicio nav ul{
-		margin:0;
-	}*/
-	/*#inicio nav ul a{
-		width:20%;
-	}*/
-/*	#inicio nav ul a li{
-		line-height:2em;
-	}*/
-	/*#inicio img{
-		width:70%;
-		margin-top:150px;
-	}*/
-	/*#sobre{ 
-		height:100vh;
-		background: url("Assets/sob.jpg") no-repeat center top; 
-		background-size:auto 100%;
-		display:flex;
-		justify-content:flex-end;
-		align-items:center;
-		margin-bottom:1%;
-
-	} */
-	/*#sobre div{
-		width:70%;
-		margin:0;
-		padding:5%;
-		margin-right:15%;
-		margin-top:0%;
-		border-radius:25px;
-	}*/
-	/*#sobre div h2{
-		margin-top:0;
-		line-height:2em; 
-	}*/
-	/*#sobre  div p{
-		line-height:1em;
-		font-size:1em;
-	}*/
-	/*#acoes{
-		height:150vh;
-		width:100%;
-		padding:0;
-		flex-direction:column;     
-	}*/
-/*	#acoes h2{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight:700;
-		margin:0;
-		font-size:2em;
-		padding-left:10%;  
-	}*/
-	/*#acoes div {
-		width: 100%;
-		margin: 0 5px;
-	}*/
-/*	#acoes img{
-		width:100%;
-	}*/
-	/*#acoes .p1{
- 		display:none; 
-	}*/
-	/*#acoes .p3{
-		font-weight:700; 
-		display:block; 
-		padding: 0;
-		padding-left:12%; 
-	}*/
-
-/*}*/
   
