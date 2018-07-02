@@ -4,19 +4,13 @@
 	box-sizing:border-box;
 	position:relative;
 }
-html,body{
+body{
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
 	width:100%;
-	overflow:auto;
-}
-@media (max-width:640px){
-	body{
-		margin:0;
-		overflow:hidden;
-	}
+	margin: 0;
 }
 #inicio{
 	width:100%;
@@ -41,6 +35,7 @@ html,body{
 	list-style:none;
 	display:flex;
 	justify-content: center;
+	/*align-items: center;*/
 	padding:0;
 }
 @media (max-width: 640){
@@ -49,22 +44,24 @@ html,body{
 	}
 }
 #inicio nav ul a{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:400;
-	color:#00f;
-	width:10%;
-	text-decoration:none;
+	width:5%;
 	margin:1%;
+	min-width: 100px;
+	text-decoration:none;
 }
 @media (max-width: 640px){
 	#inicio nav ul a{
 		width:20%;
+		min-width: 60px;
 	}
 }
 #inicio nav ul a li{
 	border: solid 1px #888;
 	border-radius:15px;
 	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	color:#00416d;
 	font-style: normal;
 	text-align:center;
 	font-size:0.94em;
@@ -85,7 +82,7 @@ html,body{
 	}
 }
 #sobre{ 
-	height:100vh;
+	min-height:100vh;
 	background: url("Assets/sob.jpg") no-repeat; 
 	background-size:cover;
 	display:flex;
@@ -114,6 +111,7 @@ html,body{
 	#sobre div{
 		width:85%;
 		margin:0 auto;
+		margin-bottom: 2%;
 		padding:5%;
 	}
 }
@@ -292,4 +290,31 @@ html,body{
 	margin-bottom:7%; 
 	margin-left:5%;  
 }
-  
+/*footer Vai na Web */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+.vnw{ 
+	width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
+}
