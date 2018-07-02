@@ -4,19 +4,13 @@
 	box-sizing:border-box;
 	position:relative;
 }
-html,body{
+body{
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
 	width:100%;
-	overflow:auto;
-}
-@media (max-width:640px){
-	body{
-		margin:0;
-		overflow:hidden;
-	}
+	margin: 0;
 }
 #inicio{
 	width:100%;
@@ -41,6 +35,7 @@ html,body{
 	list-style:none;
 	display:flex;
 	justify-content: center;
+	/*align-items: center;*/
 	padding:0;
 }
 @media (max-width: 640){
@@ -49,22 +44,24 @@ html,body{
 	}
 }
 #inicio nav ul a{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:400;
-	color:#00f;
-	width:10%;
-	text-decoration:none;
+	width:5%;
 	margin:1%;
+	min-width: 100px;
+	text-decoration:none;
 }
 @media (max-width: 640px){
 	#inicio nav ul a{
 		width:20%;
+		min-width: 60px;
 	}
 }
 #inicio nav ul a li{
 	border: solid 1px #888;
 	border-radius:15px;
 	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	color:#00416d;
 	font-style: normal;
 	text-align:center;
 	font-size:0.94em;
@@ -85,9 +82,9 @@ html,body{
 	}
 }
 #sobre{ 
-	height:100vh;
+	min-height:100vh;
 	background: url("Assets/sob.jpg") no-repeat; 
-	background-size:100%;
+	background-size:cover;
 	display:flex;
 	justify-content:flex-end;
 	align-items:center;
@@ -97,7 +94,7 @@ html,body{
 	#sobre{ 
 		background-position: center top;
 		margin-bottom:1%;
-		background-size:300%;
+		background-size:cover;
 		padding-top:70px;
 	} 
 }
@@ -114,22 +111,23 @@ html,body{
 	#sobre div{
 		width:85%;
 		margin:0 auto;
+		margin-bottom: 2%;
 		padding:5%;
 	}
 }
-#sobre div h2{
+.sobreh2{
 	color:#95989a;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:600; 
 	margin-top:0;
 }
 @media (max-width: 640px){
-	#sobre div h2{
+	.sobreh2{
 		margin-top:0;
 		line-height:2em; 
 	}
 }
-#sobre  div p{
+.sobrep{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
 	text-align:left;
@@ -140,7 +138,7 @@ html,body{
 	letter-spacing:0;
 }
 @media (max-width: 640px){
-	#sobre  div p{
+	.sobrep{
 		line-height:1em;
 		font-size:1em;
 		margin-top:0;
@@ -165,7 +163,7 @@ html,body{
 		flex-direction:column;     
 	}
 }
-#acoes h2{
+.h2acoes{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:600;
 	font-size:1.88em;
@@ -178,7 +176,7 @@ html,body{
 	width:100%;
 }
 @media (max-width: 640px){
-	#acoes h2{
+	.h2acoes{
 		font-weight:700;
 		margin:0;
 		font-size:2em;
@@ -234,7 +232,7 @@ html,body{
 	width:100%;
 	height:100vh; 
 	background:url("Assets/contato.jpg") no-repeat; 
-	background-size:100%;
+	background-size:cover;
 	display:flex;
 	justify-content:flex-end;
 	align-items:center;
@@ -263,7 +261,7 @@ html,body{
 		margin-top:10%;
 	}
 }
-#contato div h2{
+.h2contato{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:700;
 	color:#fff;
@@ -272,12 +270,17 @@ html,body{
 	justify-content:center;      
 }
 
-#contato div p{
+.email{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
 	color:#fff; 
 	margin-left:13%;   
-	
+}
+.numerotel{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	color:#fff; 
+	margin-left:13%;   
 }
 
 #contato div img{
@@ -287,84 +290,31 @@ html,body{
 	margin-bottom:7%; 
 	margin-left:5%;  
 }
-
-/*@media (max-width:640px){
-	body{
-		margin:0;
-		overflow:hidden;
-	}*/
-	/*#inicio{
-		align-items: flex-start;
-		height: 70vh;
-	}*/
-	/*#inicio nav ul{
-		margin:0;
-	}*/
-	/*#inicio nav ul a{
-		width:20%;
-	}*/
-/*	#inicio nav ul a li{
-		line-height:2em;
-	}*/
-	/*#inicio img{
-		width:70%;
-		margin-top:150px;
-	}*/
-	/*#sobre{ 
-		height:100vh;
-		background: url("Assets/sob.jpg") no-repeat center top; 
-		background-size:auto 100%;
-		display:flex;
-		justify-content:flex-end;
-		align-items:center;
-		margin-bottom:1%;
-
-	} */
-	/*#sobre div{
-		width:70%;
-		margin:0;
-		padding:5%;
-		margin-right:15%;
-		margin-top:0%;
-		border-radius:25px;
-	}*/
-	/*#sobre div h2{
-		margin-top:0;
-		line-height:2em; 
-	}*/
-	/*#sobre  div p{
-		line-height:1em;
-		font-size:1em;
-	}*/
-	/*#acoes{
-		height:150vh;
-		width:100%;
-		padding:0;
-		flex-direction:column;     
-	}*/
-/*	#acoes h2{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight:700;
-		margin:0;
-		font-size:2em;
-		padding-left:10%;  
-	}*/
-	/*#acoes div {
-		width: 100%;
-		margin: 0 5px;
-	}*/
-/*	#acoes img{
-		width:100%;
-	}*/
-	/*#acoes .p1{
- 		display:none; 
-	}*/
-	/*#acoes .p3{
-		font-weight:700; 
-		display:block; 
-		padding: 0;
-		padding-left:12%; 
-	}*/
-
-/*}*/
-  
+/*footer Vai na Web */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+.vnw{ 
+	width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
+}
